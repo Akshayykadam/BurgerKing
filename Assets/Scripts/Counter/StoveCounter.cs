@@ -13,8 +13,6 @@ public class StoveCounter : BaseCounter, IHasProgress
         public State state;
     }
 
-
-
     public enum State
     {
         Idel,
@@ -103,7 +101,7 @@ public class StoveCounter : BaseCounter, IHasProgress
                 case State.Burned:
                     break;
             }
-            Debug.Log(state);
+            //Debug.Log(state);
         }
     }
 

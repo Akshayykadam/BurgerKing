@@ -64,6 +64,7 @@
     <Compile Include="Assets/Scripts/UI/DeliveryManagerSingleUI.cs" />
     <Compile Include="Assets/Scripts/Counter/PlatesCounterVisual.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/RecipeSO.cs" />
+    <Compile Include="Assets/Scripts/ResetStaticDataManager.cs" />
     <Compile Include="Assets/Scripts/Counter/PlatesCounter.cs" />
     <Compile Include="Assets/Scripts/Counter/TrashCounter.cs" />
     <Compile Include="Assets/Scripts/Counter/StoveCounterSound.cs" />
@@ -78,11 +79,13 @@
     <Compile Include="Assets/Scripts/Scriptable Objects/BurningRecipeSO.cs" />
     <Compile Include="Assets/Scripts/UI/GameOverUI.cs" />
     <Compile Include="Assets/Scripts/PlayerInputAction.cs" />
+    <Compile Include="Assets/Scripts/MusicManager.cs" />
     <Compile Include="Assets/Scripts/UI/MainMenuUI.cs" />
     <Compile Include="Assets/Scripts/Counter/ContainerCounterVisual.cs" />
     <Compile Include="Assets/Scripts/Counter/CuttingCounterVisual.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/FryingRecipeSO.cs" />
     <Compile Include="Assets/Scripts/UI/PlateIconUI.cs" />
+    <Compile Include="Assets/Scripts/UI/GamePauseUI.cs" />
     <Compile Include="Assets/Scripts/UI/ProgressbarUI.cs" />
     <Compile Include="Assets/Scripts/LoaderCallback.cs" />
     <Compile Include="Assets/Scripts/IHasProgress.cs" />
@@ -101,6 +104,7 @@
     <Compile Include="Assets/Scripts/Counter/DeliveryCounter.cs" />
     <Compile Include="Assets/Scripts/GameInput.cs" />
     <Compile Include="Assets/Scripts/KitchenObject.cs" />
+    <Compile Include="Assets/Scripts/UI/OptionUI.cs" />
     <Compile Include="Assets/Scripts/UI/PlateIconSingleUI.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/CuttingRecipeSO.cs" />
     <Compile Include="Assets/Scripts/PlayerSound.cs" />
