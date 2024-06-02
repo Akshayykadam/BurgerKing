@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class OptionUI : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class OptionUI : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI soundEffectText;
     [SerializeField] private TextMeshProUGUI musicEffectText;
+
+    private Action OnCloseButtonAction;
 
     private void Awake()
     {
@@ -29,6 +32,7 @@ public class OptionUI : MonoBehaviour
 
         closeButton.onClick.AddListener(() => {
             Hide();
+            OnCloseButtonAction();
         });
     }
 
@@ -53,9 +57,11 @@ public class OptionUI : MonoBehaviour
         musicEffectText.text = "Music Volume: " + Mathf.Round(MusicManager.Instance.GetVolume() * 10f).ToString();
     }
 
-    public void Show()
+    public void Show(Action OnCloseButtonAction)
     {
+        this.OnCloseButtonAction = OnCloseButtonAction;
         gameObject.SetActive(true);
+        closeButton.Select();
     }
 
     public void Hide()
