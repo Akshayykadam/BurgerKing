@@ -8717,6 +8717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   recipeDeliveredText: {fileID: 980676311}
+  retryButton: {fileID: 1264683216}
 --- !u!1 &1592627240
 GameObject:
   m_ObjectHideFlags: 0
