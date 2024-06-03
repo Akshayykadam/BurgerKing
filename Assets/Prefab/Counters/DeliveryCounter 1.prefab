@@ -377,7 +377,7 @@ MonoBehaviour:
   bakgroundImage: {fileID: 2408235789563674405}
   iconImage: {fileID: 4957701205391358901}
   messageText: {fileID: 7466116275517980282}
-  sucessColor: {r: 0.20378521, g: 0.7075472, b: 0.110137075, a: 1}
+  sucessColor: {r: 0, g: 0, b: 0, a: 1}
   failColor: {r: 0.7264151, g: 0.09251513, b: 0.09251513, a: 1}
   sucessSprite: {fileID: 21300000, guid: 6c562ac6d3e47ff4794df31886c6d864, type: 3}
   failSprite: {fileID: 21300000, guid: 0d6e1281049dccc4189bf308b2ccf331, type: 3}

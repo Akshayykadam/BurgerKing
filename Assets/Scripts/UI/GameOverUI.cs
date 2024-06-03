@@ -8,11 +8,16 @@ public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI recipeDeliveredText;
     [SerializeField] private Button retryButton;
+    [SerializeField] private Button mainMenuButton;
 
     private void Awake()
     {
         retryButton.onClick.AddListener(() => {
             Loader.Load(Loader.Scene.GameScene);
+        });
+
+        mainMenuButton.onClick.AddListener(() => {
+            Loader.Load(Loader.Scene.MainMenuScene);
         });
     }
 

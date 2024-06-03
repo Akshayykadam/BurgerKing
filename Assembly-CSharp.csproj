@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/SelectedCounterVisual.cs" />
     <Compile Include="Assets/Scripts/UI/DeliveryManagerSingleUI.cs" />
+    <Compile Include="Assets/Scripts/UI/DeliveryResultUI.cs" />
     <Compile Include="Assets/Scripts/Counter/PlatesCounterVisual.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/RecipeSO.cs" />
     <Compile Include="Assets/Scripts/ResetStaticDataManager.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="Assets/Scripts/DeliveryManager.cs" />
     <Compile Include="Assets/Scripts/Counter/BaseCounter.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/BurningRecipeSO.cs" />
+    <Compile Include="Assets/Scripts/UI/TutorialUI.cs" />
     <Compile Include="Assets/Scripts/UI/GameOverUI.cs" />
     <Compile Include="Assets/Scripts/PlayerInputAction.cs" />
     <Compile Include="Assets/Scripts/MusicManager.cs" />
@@ -92,6 +94,7 @@
     <Compile Include="Assets/Scripts/PlateKitchenObject.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/AudioClipRefSO.cs" />
     <Compile Include="Assets/Scripts/Scriptable Objects/RecipeListSO.cs" />
+    <Compile Include="Assets/Scripts/UI/StoveBurnWarnUI.cs" />
     <Compile Include="Assets/Scripts/LookAtCamera.cs" />
     <Compile Include="Assets/Scripts/UI/GamePlayingClockUI.cs" />
     <Compile Include="Assets/Scripts/Player.cs" />
