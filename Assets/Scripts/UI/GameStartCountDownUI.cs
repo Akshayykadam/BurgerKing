@@ -8,6 +8,13 @@ public class GameStartCountDownUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI countdownText;
 
+    private Animator animator;
+    private int previousCountdownNumber;
+    private void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     private void Start()
     {
         GameManager.Instance.OnStateChanged += GameManager_OnStateChanged;
@@ -16,7 +23,15 @@ public class GameStartCountDownUI : MonoBehaviour
 
     private void Update()
     {
-        countdownText.text = Mathf.Ceil(GameManager.Instance.GetCountdownStartTimer()).ToString();
+        int CountDownNumber = Mathf.CeilToInt(GameManager.Instance.GetCountdownStartTimer());
+        countdownText.text = CountDownNumber.ToString();
+
+        if(previousCountdownNumber != CountDownNumber)
+        {
+            previousCountdownNumber = previousCountdownNumber;
+            animator.SetTrigger("NumberPopup");
+            //SoundManager.Instance.CountdownSound();
+        }
     }
 
     private void GameManager_OnStateChanged(object sender, System.EventArgs e)

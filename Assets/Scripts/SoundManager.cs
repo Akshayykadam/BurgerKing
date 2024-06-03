@@ -76,12 +76,16 @@ public class SoundManager : MonoBehaviour
         PlayeSound(audioClipRefSO.footstep, position, volume);
     }
 
+    public void PlayWarnignSound(Vector3 position)
+    {
+        PlayeSound(audioClipRefSO.warning, position);
+    }
+
     public void ChangeVolume(float newVolume)
     {
         volume = Mathf.Clamp(newVolume, 0f, 1f);
         PlayerPrefs.SetFloat(PLAYER_PREFS_SOUNDEFFECT_VOLUME, volume);
     }
-
 
     public float GetVolume()
     {

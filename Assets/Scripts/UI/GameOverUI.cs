@@ -2,10 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameOverUI : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI recipeDeliveredText;
+    [SerializeField] private Button retryButton;
+
+    private void Awake()
+    {
+        retryButton.onClick.AddListener(() => {
+            Loader.Load(Loader.Scene.GameScene);
+        });
+    }
 
     private void Start()
     {
